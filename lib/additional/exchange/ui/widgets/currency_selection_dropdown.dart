@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../model/exchange.dart';
+import '../../../../model/exchange.dart';
 import '../../bloc/exchange_bloc.dart';
 import '../../utility/helper/exchange_list_extension.dart';
 import 'dropdown_widget.dart';

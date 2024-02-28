@@ -1,4 +1,4 @@
-import '../../model/exchange.dart';
+import '../../../model/exchange.dart';
 
 double calculateExchangeRate({
   required Exchange toCurrency,

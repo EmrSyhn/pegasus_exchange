@@ -1,5 +1,5 @@
 
-import '../../../model/exchange.dart';
+import '../../../../model/exchange.dart';
 
 extension ExchangeListExtension on List<Exchange> {
   List<Exchange> filterExchange() {

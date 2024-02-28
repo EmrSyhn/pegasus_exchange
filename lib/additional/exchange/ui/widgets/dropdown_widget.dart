@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../model/exchange.dart';
+import '../../../../model/exchange.dart';
 
 class DropdownWidget extends StatelessWidget {
   final Exchange value;

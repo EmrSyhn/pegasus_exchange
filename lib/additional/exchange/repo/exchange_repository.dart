@@ -1,4 +1,4 @@
-import '../../model/exchange.dart';
+import '../../../model/exchange.dart';
 
 class ExchangeRepository {
   dynamic dbHelper;

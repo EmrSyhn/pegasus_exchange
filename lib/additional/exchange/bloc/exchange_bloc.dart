@@ -4,7 +4,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../model/exchange.dart';
+import '../../../model/exchange.dart';
 import '../exchange.dart';
 
 part 'exchange_event.dart';
@@ -21,7 +21,7 @@ class ExchangeBloc extends Bloc<ExchangeEvent, ExchangeState> {
     on<ExchangeBackButtonClickEvent>(exchangeBackButtonClickEvent);
   }
 
-  // TOOD[1]: Mock data
+  // TODO[1]: Mock data
   List<Exchange> currencyList = <Exchange>[
     Exchange(
         fromCur: 'USD',
