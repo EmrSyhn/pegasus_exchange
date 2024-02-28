@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-
 import '../../../core/widgets/custom_snack_bar.dart';
 import '../bloc/preorder_bloc.dart';
 
@@ -32,6 +31,14 @@ class _PreorderListPageState extends State<PreorderListPage> {
         backgroundColor: Colors.orange,
         centerTitle: true,
         title: Text(appbarTitle),
+        actions: [
+          IconButton(
+            onPressed: () {
+              bloc.add(PreorderSaveButtonEvent());
+            },
+            icon: const Icon(Icons.save),
+          ),
+        ],
       ),
       body: BlocConsumer<PreorderBloc, PreorderState>(
         buildWhen: (previous, current) => current is! PreorderActionState,
@@ -50,14 +57,7 @@ class _PreorderListPageState extends State<PreorderListPage> {
                 padding: const EdgeInsets.all(10),
                 child: Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Expanded(child: PreorderSaveButton(bloc: bloc)),
-                        const Spacer(),
-                        Expanded(child: SeatFilterSelection(bloc: bloc)),
-                      ],
-                    ),
+                    SeatFilterSelection(bloc: bloc),
                     state.preorderList.isEmpty
                         ? const Center(
                             child: Text(

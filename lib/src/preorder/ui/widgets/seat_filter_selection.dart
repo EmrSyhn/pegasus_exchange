@@ -22,6 +22,7 @@ class _SeatFilterSelectionState extends State<SeatFilterSelection> {
         borderRadius: BorderRadius.circular(20),
       ),
       child: DropdownButton(
+        icon: const Icon(Icons.filter_list),
         borderRadius: BorderRadius.circular(20),
         isExpanded: true,
         underline: Container(),
@@ -34,22 +35,27 @@ class _SeatFilterSelectionState extends State<SeatFilterSelection> {
         items: const <DropdownMenuItem>[
           DropdownMenuItem(
             value: PreorderSeatInterval.nonSelected,
+            alignment: Alignment.center,
             child: Text('Filtrele'),
           ),
           DropdownMenuItem(
             value: PreorderSeatInterval.start,
+            alignment: Alignment.center,
             child: Text('1-11'),
           ),
           DropdownMenuItem(
             value: PreorderSeatInterval.mid,
+            alignment: Alignment.center,
             child: Text('11-22'),
           ),
           DropdownMenuItem(
             value: PreorderSeatInterval.end,
+            alignment: Alignment.center,
             child: Text('22-33'),
           ),
           DropdownMenuItem(
             value: PreorderSeatInterval.all,
+            alignment: Alignment.center,
             child: Text('HEPSİ'),
           ),
         ],

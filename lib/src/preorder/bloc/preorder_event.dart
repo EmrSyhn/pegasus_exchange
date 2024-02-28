@@ -15,7 +15,8 @@ final class PreorderChangeStatusEvent extends PreorderEvent {
   final int preorderId;
   final PreorderStatus status;
 
-  const PreorderChangeStatusEvent({required this.preorderId, required this.status});
+  const PreorderChangeStatusEvent(
+      {required this.preorderId, required this.status});
 }
 
 @immutable
