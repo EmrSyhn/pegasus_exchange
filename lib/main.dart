@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'additional/exchange/ui/exchange_page.dart';
+import 'src/preorder/ui/preorder_list_page.dart';
+
+
 
 void main() {
   runApp(const MainApp());
@@ -12,7 +14,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: ExchangePage(),
+      home: PreorderListPage(),
     );
   }
 }
